@@ -5,9 +5,7 @@
   "title": "Tool Template",
   "main": "index.js",
   "display": "app",
-  "include": {
-    "ScripturePane": "1.0.2"
-  },
+  "include": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
