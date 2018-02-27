@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 class Container extends Component {
 
   render() {
+    const {translate} = this.props;
     let {contextId} = this.props.contextIdReducer;
     let contextInfo = <div/>;
     if (contextId) {
@@ -20,7 +21,7 @@ class Container extends Component {
 
     return (
       <div>
-        <div>Hello World.</div>
+        <div>{translate('hello')}</div>
         {contextInfo}
       </div>
     );
@@ -30,7 +31,8 @@ class Container extends Component {
 Container.propTypes = {
   currentToolViews: PropTypes.object.isRequired,
   resourcesReducer: PropTypes.object.isRequired,
-  contextIdReducer: PropTypes.object.isRequired
+  contextIdReducer: PropTypes.object.isRequired,
+  translate: PropTypes.func.isRequired
 };
 
 export default Container;
