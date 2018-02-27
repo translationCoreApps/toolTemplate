@@ -1,11 +1,13 @@
 # toolTemplate
-The minimum amount of code to get a tool working in translationCore
+This sample tool illustrates the minimum amount needed
+to get a tool working in translationCore.
 
 # Get started
-1. Make sure you have your developer environment setup, by installing: Git, Node ~v8, NPM v5.1.0.
-1. Clone the translationCore repo, found here: https://github.com/unfoldingWord-dev/translationCore
+
+1. Set up your development environment by installing: Git, Node ~v8, NPM v5.1.0.
+1. Clone the translationCore repo, found at https://github.com/unfoldingWord-dev/translationCore
 1. Run `npm install` from inside of the translationCore directory.
-1. Run `npm run install-apps` to install/clone the application's external repositories.
+1. Run `npm run update-apps` to install/clone the application's external repositories.
 1. Clone this repo locally inside of the `translationCore/tC_apps` path.
 1. Run `npm start` to launch translationCore.
 1. Login and find a project to open, you can click `Import from Online` and search for a Titus project.
