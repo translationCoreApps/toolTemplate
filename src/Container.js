@@ -4,15 +4,12 @@ import PropTypes from 'prop-types';
 
 class Container extends Component {
 
-  componentWillMount() {
-  }
-
   render() {
     let {contextId} = this.props.contextIdReducer;
-    let html = <div></div>;
+    let contextInfo = <div/>;
     if (contextId) {
       let {tool, groupId, reference} = contextId;
-      html = (
+      contextInfo = (
         <div>
           <p>contextId.tool: {tool}</p>
           <p>contextId.groupId: {groupId}</p>
@@ -24,7 +21,7 @@ class Container extends Component {
     return (
       <div>
         <div>Hello World.</div>
-        {html}
+        {contextInfo}
       </div>
     );
   }
@@ -34,6 +31,6 @@ Container.propTypes = {
   currentToolViews: PropTypes.object.isRequired,
   resourcesReducer: PropTypes.object.isRequired,
   contextIdReducer: PropTypes.object.isRequired
-}
+};
 
 export default Container;

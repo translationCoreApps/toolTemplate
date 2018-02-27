@@ -1,6 +1,6 @@
 {
   "name": "toolTemplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A template for building tools",
   "title": "Tool Template",
   "main": "index.js",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/translationCoreApps/toolTemplate/issues"
   },
-  "homepage": "https://github.com/translationCoreApps/toolTemplate#readme"
+  "homepage": "https://github.com/translationCoreApps/toolTemplate#readme",
+  "dependencies": {
+    "tc-tool": "^1.0.3"
+  }
 }
